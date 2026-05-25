@@ -5,3 +5,4 @@ select *
 from inventory
 WHERE quantity_on_hand <= reorder_level
 ORDER BY quantity_on_hand ASC
+-- results: 4 records
