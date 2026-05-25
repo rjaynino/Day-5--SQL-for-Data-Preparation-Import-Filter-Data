@@ -1,0 +1,8 @@
+-- The marketing team wants to see all high-value sales (₱10,000 and above) from the NCR region. Show
+-- the customer_name, product_name, city, and total_amount. 
+-- Sort by total_amount from highest to lowest.
+select customer_name, product_name, city, total_amount
+from sales
+WHERE region = 'NCR' AND total_amount >= 10000
+ORDER BY total_amount DESC
+--result: 8 rows
